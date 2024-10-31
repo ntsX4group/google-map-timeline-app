@@ -1,9 +1,6 @@
 package kokorowa.timeline
 
-import platform.UIKit.UIDevice
 
-class IOSPlatform: Platform {
-    override val name: String = UIDevice.currentDevice.systemName() + " " + UIDevice.currentDevice.systemVersion
-}
+actual fun getPlatform(): KotlinPlatform = KotlinPlatform.IOS
 
-actual fun getPlatform(): Platform = IOSPlatform()
+actual fun getHttpRequest(): HttpRequest = IosHttpRequest()

@@ -4,4 +4,14 @@ interface Platform {
     val name: String
 }
 
-expect fun getPlatform(): Platform
+interface HttpRequest {
+    fun call()
+}
+
+enum class KotlinPlatform {
+    Android, IOS
+}
+
+expect fun getPlatform(): KotlinPlatform
+
+expect fun getHttpRequest(): HttpRequest
