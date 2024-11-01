@@ -2,7 +2,8 @@ package kokorowa.timeline
 
 class ApiRequest {
 
-    fun call() {
-        getHttpRequest().call();
+    fun sendTimeLine() {
+
+        getHttpRequest().sendTimeLine();
     }
 }

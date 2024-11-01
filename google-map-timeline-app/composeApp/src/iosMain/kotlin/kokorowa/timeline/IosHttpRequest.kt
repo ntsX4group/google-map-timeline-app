@@ -2,6 +2,11 @@ package kokorowa.timeline
 
 class IosHttpRequest: HttpRequest {
 
-    override fun call() {
+    override fun sendTimeLine() {
+    }
+
+    override  fun validateLogin(login: LoginInfo) : LoginResult {
+
+        return LoginResult()
     }
 }

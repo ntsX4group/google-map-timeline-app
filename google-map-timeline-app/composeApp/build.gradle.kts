@@ -34,6 +34,7 @@ kotlin {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
             implementation(libs.com.squareup.okhttp3)
+            implementation(libs.com.squareup.moshi)
         }
         commonMain.dependencies {
             implementation(compose.runtime)

@@ -1,11 +1,19 @@
 package kokorowa.timeline
 
-interface Platform {
-    val name: String
+
+class LoginInfo {
+    var userId: String = ""
+    var password: String = ""
 }
 
+class LoginResult {
+
+}
 interface HttpRequest {
-    fun call()
+
+    fun sendTimeLine()
+
+    fun validateLogin(login: LoginInfo) : LoginResult
 }
 
 enum class KotlinPlatform {
